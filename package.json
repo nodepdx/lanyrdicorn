@@ -1,0 +1,15 @@
+{
+  "name": "lanyrdicorn",
+  "version": "0.0.0",
+  "description": "Tools for munging Lanyrd schedule data.",
+  "author": "nodepdx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nodepdx/lanyrdicorn"
+  },
+  "dependencies": {
+    "lanyrd": "~0.2.0",
+    "moment": "~2.0.0"
+  }
+}

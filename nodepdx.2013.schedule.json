@@ -1,0 +1,282 @@
+[
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 09:00:00",
+    "end_time": "2013-05-16 09:20:00",
+    "duration": "20 minutes",
+    "speaker": "Wraithan",
+    "email": "wraithan@mozilla.com",
+    "title": "ZenIRCBot and the Art of Pub/Sub",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 09:20:00",
+    "end_time": "2013-05-16 10:00:00",
+    "duration": "40 minutes",
+    "speaker": "Brock Whitten",
+    "email": "brock@chloi.io",
+    "title": "Mighty Messaging Patterns",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 10:10:00",
+    "end_time": "2013-05-16 10:30:00",
+    "duration": "20 minutes",
+    "speaker": "Matthew Lyon",
+    "email": "mattly@appfog.com",
+    "title": "Let's Make Music!",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 10:30:00",
+    "end_time": "2013-05-16 11:10:00",
+    "duration": "40 minutes",
+    "speaker": "James Halliday",
+    "email": "substack@gmail.com",
+    "title": "beep boop",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 11:30:00",
+    "end_time": "2013-05-16 12:10:00",
+    "duration": "40 minutes",
+    "speaker": "Emily Rose",
+    "email": "emily@contactvibe.com",
+    "title": "Realtime Hardware with Node.js",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 13:10:00",
+    "end_time": "2013-05-16 13:30:00",
+    "duration": "20 minutes",
+    "speaker": "J Chris Anderson",
+    "email": "jchris@couchbase.com",
+    "title": "Hands On Realtime Text Analytics",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 13:30:00",
+    "end_time": "2013-05-16 13:50:00",
+    "duration": "20 minutes",
+    "speaker": "Chris Dickinson",
+    "email": "chris@neversaw.us",
+    "title": "Implementing Git in JavaScript & the Browser: A Case Study",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 13:50:00",
+    "end_time": "2013-05-16 14:30:00",
+    "duration": "40 minutes",
+    "speaker": "Chris Meiklejohn",
+    "email": "christopher.meiklejohn@gmail.com",
+    "title": "An Introduction to Functional Reactive Programming",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 14:30:00",
+    "end_time": "2013-05-16 14:50:00",
+    "duration": "20 minutes",
+    "speaker": "Troy Howard",
+    "email": "thoward37@gmail.com",
+    "title": "Thursday Lightning Talks",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 15:00:00",
+    "end_time": "2013-05-16 15:20:00",
+    "duration": "20 minutes",
+    "speaker": "Jason Denizac",
+    "email": "jason@denizac.org",
+    "title": "Programming with a Purpose",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 15:20:00",
+    "end_time": "2013-05-16 15:40:00",
+    "duration": "20 minutes",
+    "speaker": "Hannah Fouasnon",
+    "email": "hanelifou@gmail.com",
+    "title": "Optimizing Single-Page Javascript Websites for SEO",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 15:40:00",
+    "end_time": "2013-05-16 16:00:00",
+    "duration": "20 minutes",
+    "speaker": "Adam Baldwin",
+    "email": "baldwin@andyet.net",
+    "title": "Introducing NodeSecurity.io",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 16:20:00",
+    "end_time": "2013-05-16 16:40:00",
+    "duration": "20 minutes",
+    "speaker": "Scott Hanselman",
+    "email": "scott@hanselman.com",
+    "title": "Azure for the non-Microsoft Person - How and Why?",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 16:40:00",
+    "end_time": "2013-05-16 17:00:00",
+    "duration": "20 minutes",
+    "speaker": "Mike McNeil",
+    "email": "mike@balderdash.co",
+    "title": "Intro to Sails.js",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 17:00:00",
+    "end_time": "2013-05-16 17:20:00",
+    "duration": "20 minutes",
+    "speaker": "Adam Ulvi",
+    "email": "adam@pokemedia.com",
+    "title": "Put a Sensor On It!",
+    "released": true
+  },
+  {
+    "date": "2013-05-16",
+    "start_time": "2013-05-16 17:20:00",
+    "end_time": "2013-05-16 18:00:00",
+    "duration": "40 minutes",
+    "speaker": "Peter Braden",
+    "email": "PeterBraden@peterbraden.co.uk",
+    "title": "Teaching Robots to See With Javascript",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 09:00:00",
+    "end_time": "2013-05-17 09:20:00",
+    "duration": "20 minutes",
+    "speaker": "Thorsten Lorenz",
+    "email": "thlorenz@gmx.de",
+    "title": "Module Driven Development",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 09:20:00",
+    "end_time": "2013-05-17 10:00:00",
+    "duration": "40 minutes",
+    "speaker": "Max Ogden",
+    "email": "maxosmail@gmail.com",
+    "title": "Minecraft.js",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 10:10:00",
+    "end_time": "2013-05-17 10:30:00",
+    "duration": "20 minutes",
+    "speaker": "Charlie Key",
+    "email": "charlie@modulus.io",
+    "title": "Building a Multiplayer World for Pillow Pets",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 10:30:00",
+    "end_time": "2013-05-17 11:10:00",
+    "duration": "40 minutes",
+    "speaker": "Ward Cunningham",
+    "email": "ward@c2.com",
+    "title": "My Sensors Love Node.js",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 11:30:00",
+    "end_time": "2013-05-17 12:10:00",
+    "duration": "40 minutes",
+    "speaker": "Zach Babb",
+    "email": "zbabb@globesherpa.com",
+    "title": "Building a Computer In Your Browser",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 13:10:00",
+    "end_time": "2013-05-17 13:50:00",
+    "duration": "40 minutes",
+    "speaker": "Troy Howard",
+    "email": "thoward37@gmail.com",
+    "title": "Friday Lightning Talks",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 13:50:00",
+    "end_time": "2013-05-17 14:30:00",
+    "duration": "40 minutes",
+    "speaker": "Jerry Sievert",
+    "email": "jerry@legitimatesounding.com",
+    "title": "Know Your Environment",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 14:30:00",
+    "end_time": "2013-05-17 14:50:00",
+    "duration": "20 minutes",
+    "speaker": "Forrest Norvell",
+    "email": "forrest@newrelic.com",
+    "title": "Do as I say, not as I do: Node in the real world",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 15:00:00",
+    "end_time": "2013-05-17 15:20:00",
+    "duration": "20 minutes",
+    "speaker": "Paul A Jungwirth",
+    "email": "pj@illuminatedcomputing.com",
+    "title": "Handling Errors with Cluster and Domains",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 15:20:00",
+    "end_time": "2013-05-17 15:40:00",
+    "duration": "20 minutes",
+    "speaker": "Tracy Abrahms",
+    "email": "tracyhinds@gmail.com",
+    "title": "Punching Rocks: my intimate adventure with rock climbing and becoming a programmer",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 15:40:00",
+    "end_time": "2013-05-17 16:00:00",
+    "duration": "20 minutes",
+    "speaker": "Ryan Jarvinen",
+    "email": "ryan@ryanjarvinen.com",
+    "title": "Clustering Node.js on OpenShift",
+    "released": true
+  },
+  {
+    "date": "2013-05-17",
+    "start_time": "2013-05-17 16:00:00",
+    "end_time": "2013-05-17 16:20:00",
+    "duration": "20 minutes",
+    "speaker": "Aron Racho",
+    "email": "Aron.Racho@jivesoftware.com",
+    "title": "Jive Purposeful Places SDK - A NodeJS Bromance",
+    "released": true
+  }
+]
