@@ -7,6 +7,7 @@
     "speaker": "Wraithan",
     "email": "wraithan@mozilla.com",
     "title": "ZenIRCBot and the Art of Pub/Sub",
+    "abstract": "<p>Pub/sub has been growing in popularity for various pieces of infrastructure due to how much bigger our networks are getting. The publisher being able to completely ignore if there is anything listening or not and just fire off messages means that if a part of your infrastructure goes down it doesn&#39;t bring down the other parts.</p>\n<p>I&#39;ll be using my bot, ZenIRCBot, as a case study for pub/sub that is more approachable. ZenIRCBot connects to IRC then sends the things it receives into a redis pub/sub channel, it also listens on a pub/sub channel for things to do such as sending messages to IRC channels. On the other side of these channels are services that listen for events, react, and send back things to do. Or maybe they just listen or just send things to do, there is no reason why they have to both listen and send commands, this is the beauty of this services based model.</p>\n<p>This talk will be comprised of:</p>\n<ul class=\"bullets\">\n  <li>A basic intro to Redis and what it is capable of.</li>\n  <li>What pub/sub is and some basic examples.</li>\n  <li>The case study: ZenIRCBot</li>\n  <li>Problems and other various difficulties I&#39;ve faced.</li>\n  <li>Where is this project going?</li>\n</ul>",
     "released": true
   },
   {
@@ -17,6 +18,7 @@
     "speaker": "Brock Whitten",
     "email": "brock@chloi.io",
     "title": "Mighty Messaging Patterns",
+    "abstract": "<p>Messaging is the lifeblood of distributed systems yet it is often treated as an afterthought when applications are architected. Few get passed the point of tacking on a message queue to fire and forget tasks with no visibility into what is happening on the system. I&#39;m here to tell you we can do better. That Messaging can do more for us than just put tasks in the background. By combining basic messaging paradigms we can build powerful distributed systems with full awareness of what is happening around the network. And we can do it all in pure JavaScript.</p>\n<p>In this talk, I will start with a crash course on the basic messaging patterns `push/pull`, `pub/sub`, and `request/reply` and then show a real example of how we have combined these patterns to build a custom message broker that we have used to build a fully distributed and modular architecture for the Harp Platform. I will share details about what we have learned and common pitfalls to avoid when building a messaging system for your needs.</p>\n<p>Basic outline for the talk:</p>\n<ul class=\"bullets\">\n  <li>how messaging can be useful</li>\n  <li>crash course on the basic message patterns</li>\n  <li>how to get started with zeromq/axon</li>\n  <li>common pitfalls when in production</li>\n  <li>proven trade secrets we have learned</li>\n</ul>\n<p>By the end of the talk, my hope is that everyone will have a new appreciation for what can be achieved with massaging and will know where to begin when attempting to integrate messaging into their next project. I feel this aspect of building modern web applications is often overlooked and viable techniques need to be shared and discussed.</p>",
     "released": true
   },
   {
@@ -27,6 +29,7 @@
     "speaker": "Matthew Lyon",
     "email": "mattly@appfog.com",
     "title": "Let's Make Music!",
+    "abstract": "<p>Music happens over time and so does asynchronous code. Therefore, let&#39;s write music in Javascript! We&#39;ll build a network sound sequence server that will talk to freely-available softsynths and possibly an HTML5 Audio API, covering how to model things such as drum patterns, melodies, oscillators and pattern banks.</p>",
     "released": true
   },
   {
@@ -37,6 +40,7 @@
     "speaker": "James Halliday",
     "email": "substack@gmail.com",
     "title": "beep boop",
+    "abstract": "<p>Learn how to make computer sounds in node and the browser with the same api.</p>\n<p>Using just a single function that takes a parameter t, time in seconds, and returns an amplitude between -1 and 1, inclusive, you can create music!</p>\n<p>You can use this basic approach to write songs and synthesizers. In javascript. Yay!</p>",
     "released": true
   },
   {
@@ -47,6 +51,7 @@
     "speaker": "Emily Rose",
     "email": "emily@contactvibe.com",
     "title": "Realtime Hardware with Node.js",
+    "abstract": "<p>Join us for another installment of &quot;Realtime Hardware with Node.js&quot; as we take a look at just how exactly one should go about making a fool of themselves on stage with a bunch of electronics. We will cover the basics of getting started with hardware, demonstrate some cool tech, and conclude with a super rad (slightly hazy) and interactive dance party of epic (modest) proportions — if everyone cooperates. Questions are welcome throughout the presentation, and audience members are encouraged* to participate.</p>\n<ul class=\"bullets\">\n  <li>bribed with stickers</li>\n</ul>",
     "released": true
   },
   {
@@ -57,6 +62,7 @@
     "speaker": "J Chris Anderson",
     "email": "jchris@couchbase.com",
     "title": "Hands On Realtime Text Analytics",
+    "abstract": "<p>A common problem in large scale computing, is coordinating workers when they can be scattered across compute nodes. For workloads like this, atomic operators like increment and decrement reduce contention between distributed processes.</p>\n<p>In this talk I&#39;ll show a full text analysis tool which ranks words in the Twitter firehose. By storing each token in a key based on its characteristics, we can provide word rankings both globally, as well as over time and space.</p>\n<p>We&#39;ll show the running application, and take a tour through the code, as well as discuss cluster sizing and how it is impacted by variations in the input data stream.</p>\n<p>For instance a tweet in English from San Francisco might say &quot;Go Giants&quot; so counters for 2012:go and usa-sf:2012-07:giants (among a few dozen others) are incremented. Even using memory like this, the counts from a full corpus of English text would only take a few gigabytes to hold, making this architecture more efficient than a traditional index-and-rollup approach.</p>",
     "released": true
   },
   {
@@ -66,7 +72,8 @@
     "duration": "20 minutes",
     "speaker": "Chris Dickinson",
     "email": "chris@neversaw.us",
-    "title": "Implementing Git in JavaScript & the Browser: A Case Study",
+    "title": "Implementing Git in JavaScript & the Browser",
+    "abstract": "<p>Git is one of my favorite things to hack on. It&#39;s long been my goal to get a working (workable?) implementation of git running in pure JS, in the browser. My first attempt two years ago failed; and for a long time I&#39;ve let the thought bounce around in the back of my head.</p>\n<p>Spurred on by the recent interest in js-git, I recently restarted the journey towards an in-browser git, in order to help creationix deliver the best possible js-git. Newly armed with browserify and the small-module ethos, I&#39;ve come much closer to a working git in browser and Node, and in the process have really put browserify and its shims through their paces.</p>\n<p>This talk will be comprised of:</p>\n<ul class=\"bullets\">\n  <li>A quick intro to the git object model and transport protocol</li>\n  <li>How browserify and the small module ethos have enabled great successes in the project.</li>\n  <li>Difficulties encountered in the process, both with Node.JS itself and with browserify, and how I&#39;ve worked through them.</li>\n  <li>How I&#39;ve diagnosed and worked through various performance issues.</li>\n  <li>Where is this project going?</li>\n</ul>",
     "released": true
   },
   {
@@ -77,6 +84,7 @@
     "speaker": "Chris Meiklejohn",
     "email": "christopher.meiklejohn@gmail.com",
     "title": "An Introduction to Functional Reactive Programming",
+    "abstract": "<p>There is no doubt that todays web applications continue to grow in adoption, replacing their desktop counterparts in all areas of computation. Essential to their growth is their ability to provide near-native performance and rich user experiences. As these applications grow in essential complexity, they also grow in accidental complexity due to the imperative callback processing style found in most web applications. The asynchronous nature of most of these applications also further compounds the issues due to guarantees around message ordering, and a level of indirection required in callbacks handling events.</p>\n<p>Functional reactive programming is one approach for mitigating accidental complexity, using a declarative and composable data-flow model. During this talk, we&#39;ll look at the history of functional reactive programming, some JavaScript implementations of FRP, and finally some ClojureScript implementations of FRP and examples on how to get started with using functional reactive programming.</p>",
     "released": true
   },
   {
@@ -87,6 +95,7 @@
     "speaker": "Troy Howard",
     "email": "thoward37@gmail.com",
     "title": "Thursday Lightning Talks",
+    "abstract": "<p>A series of short five minute presentations.</p>",
     "released": true
   },
   {
@@ -97,6 +106,7 @@
     "speaker": "Jason Denizac",
     "email": "jason@denizac.org",
     "title": "Programming with a Purpose",
+    "abstract": "<p>As programmers we are wizards. Our job is to manufacture super powers. Like with the Manhattan Project, wielding such great technological power entails moral implications which we ignore at our peril. But we can recognize this power, embrace it, and use it for great good. Node gives us a tool kit to confront great problems and share in solving them. Specifically: radical decomposition, horizontal reuse, and positive community norms around testing and documentation.</p>\n<p>Audience participation requested: be prepared to share your expertise in a real world problem space like education, civics, social equity, environmental conservation, healthcare, or your own favorite &quot;intractable&quot; problem. If time and scheduling permits, I&#39;d love to have a series of lightning talks in which people could introduce other developers to the problem domain.</p>",
     "released": true
   },
   {
@@ -107,6 +117,7 @@
     "speaker": "Hannah Fouasnon",
     "email": "hanelifou@gmail.com",
     "title": "Optimizing Single-Page Javascript Websites for SEO",
+    "abstract": "<p>Creating single-page javascript websites enable developers to more easily support advanced web client features. For example, the persistent playing experience on soundcloud is supported by a single-page backbone.js architecture. One of the downsides when deciding on this architecture is that web crawlers have trouble indexing content, which can hurt seo and facebook sharing.</p>\n<p>This presentation covers how we solve this problem at DJZ. The example will be a simplified angular.js application optimized for seo using primarily phantom.js. Viewers can follow along with code on github (link to come).</p>",
     "released": true
   },
   {
@@ -117,6 +128,7 @@
     "speaker": "Adam Baldwin",
     "email": "baldwin@andyet.net",
     "title": "Introducing NodeSecurity.io",
+    "abstract": "<p>The node.js community is growing at an amazing rate. At the time of writing there was 27,757 modules publised on npm. Have you ever stopped to think just what you are putting into your project when you npm install somebody else&#39;s module? Do you trust that code? This is an insane project to find out the answer to that question.</p>\n<p>This talk will introduce the nodesecurity.io project, it&#39;s goals, current results in hopes of inspiring involvement and receiving feedback directly from the node community!</p>",
     "released": true
   },
   {
@@ -127,6 +139,7 @@
     "speaker": "Scott Hanselman",
     "email": "scott@hanselman.com",
     "title": "Azure for the non-Microsoft Person - How and Why?",
+    "abstract": "<p>Join Hanselman as he digs into the open source SDKs of Windows Azure. Let&#39;s access Azure from the command line and deploy and redeploy with Git. We&#39;ll fire up Linux VMs, setup Mongo and run node.js apps in the cloud. We&#39;ll look at things like SendGrid and New Relic. The future of the cloud is open and it&#39;s a hybrid. This very technical session will cover Windows and Mac, .NET as well as pinching pennies in the cloud.</p>",
     "released": true
   },
   {
@@ -137,6 +150,7 @@
     "speaker": "Mike McNeil",
     "email": "mike@balderdash.co",
     "title": "Intro to Sails.js",
+    "abstract": "<p>Sails.js makes it easy to build custom, enterprise-grade Node.js apps. It is designed to resemble the MVC architecture from frameworks like Ruby on Rails, but with support for the more modern, data-oriented style of web app development. It&#39;s especially good for building realtime features like chat.</p>\n<p>Sails empowers UX and design teams to build hi-fi prototypes in no time without waiting for the back-end to be finished. This means focusing more resources on the user experience, which means better products. One Sails.js project at a time, companies move their legacy architecture over to a simpler, more efficient Node.js cloud. Each new client-side code base is more maintainable, since it’s built using the universal language of the internet: a RESTful JSON API.</p>",
     "released": true
   },
   {
@@ -147,6 +161,7 @@
     "speaker": "Adam Ulvi",
     "email": "adam@pokemedia.com",
     "title": "Put a Sensor On It!",
+    "abstract": "<p>Learn how easy it is to create your own monitoring system! Hobbyist components and a rich &#39;maker&#39; community puts advanced system designs well within the reach of your average software wonk. Stop planning and start building!</p>\n<p>Our case study is &#39;GroMon&#39;, a solution for monitoring a tiny indoor lettuce garden. Our wireless sensor keeps track of temperature and humidity, if the plants get too hot or too cold then we are notified via text message.</p>\n<p>We will discuss the design goals and architecture, as well as component selection, prototyping and debugging steps. With a little bit of programming skill and patience, anyone can build this network. Learn how to easily extend this solution for your own use.</p>\n<p>Our stack is Node.js running on a Raspberry Pi. We connect over Bluetooth to an Arduino hosting a single sensor. All components can be purchased off-the-shelf, no soldering is required and the total cost is around $80. Code and bill of materials is available on GitHub, let&#39;s hack!</p>",
     "released": true
   },
   {
@@ -156,47 +171,52 @@
     "duration": "40 minutes",
     "speaker": "Peter Braden",
     "email": "PeterBraden@peterbraden.co.uk",
-    "title": "Teaching Robots to See With Javascript",
+    "title": "Teaching Robots to See with JavaScript",
+    "abstract": "<p>As we start to use javascript to control quadrocopters and robots, it becomes important that they can see with images from cameras onboard.</p>\n<p>In this talk we&#39;ll take a step back and look at the field of computer vision; look at some of the exciting practical problems that can be solved with CV techniques, and look at how we can do this with my node opencv bindings.</p>\n<p>We&#39;ll take a quick look at how you can write native bindings for a library such as opencv. Then we&#39;ll do a deep dive and look at what opencv is actually doing when you do face detection.</p>",
     "released": true
   },
   {
     "date": "2013-05-17",
     "start_time": "2013-05-17 09:00:00",
-    "end_time": "2013-05-17 09:20:00",
-    "duration": "20 minutes",
+    "end_time": "2013-05-17 09:30:00",
+    "duration": "30 minutes",
     "speaker": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
     "title": "Module Driven Development",
+    "abstract": "<p>Reviewing the online slides of this talk is the best way to get an idea of what module driven development is about. The speaker notes appear in the browser console.</p>\n<p>The main points are as follows:</p>\n<p>what constitutes a module<br>\nwhy it is desirable to build smaller modules<br>\nchallenges and patterns for separating the application into independent modules<br>\nprocess of pulling out a module from an application<br>\nreplpad case study<br>\nhow to become module driven phase1 and phase2<br>\nbrowserify and how it enables to even manage your client side modules with npm<br>\nquick primer on tools like npm init, pkginit, travisify and npm link that help with module driven development</p>",
     "released": true
   },
   {
     "date": "2013-05-17",
-    "start_time": "2013-05-17 09:20:00",
-    "end_time": "2013-05-17 10:00:00",
+    "start_time": "2013-05-17 09:30:00",
+    "end_time": "2013-05-17 10:10:00",
     "duration": "40 minutes",
     "speaker": "Max Ogden",
     "email": "maxosmail@gmail.com",
     "title": "Minecraft.js",
+    "abstract": "<p>In January 2013 I started the Voxel.js project project. Since then we have generated nearly 100 node modules related to 3D game development and distribution, e.g. voxel rendering and first person controls and physics. In the main module (voxel-engine) I&#39;ve received 50 pull requests from 20 contributors.</p>\n<p>I&#39;d like to talk about why voxel.js has been successful from an open source standpoint (open from the beginning) and also show off some fun 3D demos and inspire people to take up game development in JS.</p>",
     "released": true
   },
   {
     "date": "2013-05-17",
-    "start_time": "2013-05-17 10:10:00",
-    "end_time": "2013-05-17 10:30:00",
+    "start_time": "2013-05-17 10:15:00",
+    "end_time": "2013-05-17 10:35:00",
     "duration": "20 minutes",
     "speaker": "Charlie Key",
     "email": "charlie@modulus.io",
     "title": "Building a Multiplayer World for Pillow Pets",
+    "abstract": "<p>Targeting a game at 10,000,000 people? Then come and find out how Pillow Pets World was built. Pillow Pets World is a virtual world built for millions of kids. Scalability and performance were aspects that were included from the start.</p>\n<p>The talk will dive into the design goals, architecture and end result of creating this massive virtual world. Come see how Pulse (a HTML5 game engine) and Node.js were combined to create a fast, expandable, mobile ready world.</p>\n<p>The technologies included in this talk are:</p>\n<p>Pulse | HTML5 Game Engine Node.js | Scalable small servers Socket.io | Real-time communication using Web sockets Redis | Small in memory storage used for pub/sub communication between servers</p>",
     "released": true
   },
   {
     "date": "2013-05-17",
-    "start_time": "2013-05-17 10:30:00",
-    "end_time": "2013-05-17 11:10:00",
+    "start_time": "2013-05-17 10:35:00",
+    "end_time": "2013-05-17 11:15:00",
     "duration": "40 minutes",
     "speaker": "Ward Cunningham",
     "email": "ward@c2.com",
     "title": "My Sensors Love Node.js",
+    "abstract": "<p>I&#39;ve tested a half-dozen home sensor integration technologies over as many years and learned something important about architecture with each generation. I&#39;ve replaced Arduino hardware with Teensy which offers much better USB support. I&#39;ve replace C++ with Perl then with Ruby/Sinatra and now Node/Wiki each time feeling the fresh air of a more friendly and dynamic environment. I&#39;ve plotted results with ascii-art, java-2d, flot and now d3.js which can be a career in itself. I&#39;ll share the good parts of each of these and suggest how you will know when it is time for you to move on.</p>",
     "released": true
   },
   {
@@ -207,6 +227,7 @@
     "speaker": "Zach Babb",
     "email": "zbabb@globesherpa.com",
     "title": "Building a Computer In Your Browser",
+    "abstract": "<p>Want to learn how computers work under the hood while learning Web technologies? Come learn about the Von Neumann 51, a series of tutorials that will take you through building a computer from the ground up in JavaScript, HTML5, and CSS3.</p>\n<p>The talk will start by laying out some of the motivation behind the project and then demonstrate some of the components people will build through the tutorials: logic gates, adder circuits, displays, etc. The end of the talk will demo a prototype of the vN51.</p>\n<p>Some of the technologies in this talk are:</p>\n<p>D3 | A JavaScript library for dynamic data-driven SVG graphics HTML5 Canvas | Pixel manipulation for display output</p>",
     "released": true
   },
   {
@@ -217,6 +238,7 @@
     "speaker": "Troy Howard",
     "email": "thoward37@gmail.com",
     "title": "Friday Lightning Talks",
+    "abstract": "<p>A series of five minute talks.</p>",
     "released": true
   },
   {
@@ -227,6 +249,7 @@
     "speaker": "Jerry Sievert",
     "email": "jerry@legitimatesounding.com",
     "title": "Know Your Environment",
+    "abstract": "<p>What if your software knew about its environment and could react? With very basic electronics skills, and the ability to read a datasheet, you can be well on your way to a smarter and more responsive application. We will discuss some common hardware protocols and how to interface your code with them to build something even more cool.</p>",
     "released": true
   },
   {
@@ -237,6 +260,7 @@
     "speaker": "Forrest Norvell",
     "email": "forrest@newrelic.com",
     "title": "Do as I say, not as I do: Node in the real world",
+    "abstract": "<p>Forrest has spent the last year plumbing the depths of Node for New Relic, as he brings support for Node to New Relic. It&#39;s a process that has required ingenuity, guile, and the willingness to break a lot of otherwise very sensible rules. He will take you on a tour of some of the more powerful but dangerous tools in the JavaScript toolbox: monkey patching, working with Node&#39;s internals, and mixing synchronous and asynchronous code without setting your hair on fire.</p>",
     "released": true
   },
   {
@@ -247,6 +271,7 @@
     "speaker": "Paul A Jungwirth",
     "email": "pj@illuminatedcomputing.com",
     "title": "Handling Errors with Cluster and Domains",
+    "abstract": "<p>Node&#39;s callback pattern makes error handling difficult: throwing an exception kills the entire node process, terminating all current requests, and every callback initiates a new stack, so stacktraces are terse and don&#39;t indicate how you got where you died. You can solve these problems using some newer features of Node called clusters and domains. This talk with explore using these tools for better error handling.</p>",
     "released": true
   },
   {
@@ -256,7 +281,8 @@
     "duration": "20 minutes",
     "speaker": "Tracy Abrahms",
     "email": "tracyhinds@gmail.com",
-    "title": "Punching Rocks: my intimate adventure with rock climbing and becoming a programmer",
+    "title": "Punching Rocks: Rock Climbing and Becoming a Programmer",
+    "abstract": "<p>A funny thing happened at the rock gym... I kept running into programmers. Rock climbing is a constant challenge. Physical? Hardly. Tired muscles is a concern once you&#39;re two pitches up and can&#39;t figure out the next move. I&#39;m afraid of heights! The psychological and mental tenacity required to complete a wall feels eerily similar to the daily challenges of the Programmer. You will commit yourself to situations that you pretty much HAVE to find a way out of. Sound familiar?</p>\n<p>Malcom Gladwell&#39;s 10,000 hours--I&#39;m not that far in. How are people learning to program nowadays? MOOCs, tutorials, workshops, communities(meetup.com), books, standard CS degrees(what of non-tech degrees?), internships, apprenticeships, code schools. What am I doing? What have I done? How many callouses have I build in the process? Experiences shared from my own perspective and others I have met on my journey have shown me a number of great ways to help move forward those willing to take up the challenge.</p>\n<p>Finally, what can I do, along with knowledgeable and helpful Node.js programmers, to build the knowledge base and accessibility into the community? How do I get programmers hooked? And how can I convince all of these brainiacs to get out and punch a few rocks?</p>",
     "released": true
   },
   {
@@ -267,6 +293,7 @@
     "speaker": "Ryan Jarvinen",
     "email": "ryan@ryanjarvinen.com",
     "title": "Clustering Node.js on OpenShift",
+    "abstract": "<p>Learn how to automate builds, deployment tasks, and application scaling as we use OpenShift&#39;s platform architecture on-demand to build your own git-based release pipeline, including: development, testing, staging, and cloud-scaling production environments for node.js.</p>",
     "released": true
   },
   {
@@ -277,6 +304,7 @@
     "speaker": "Aron Racho",
     "email": "Aron.Racho@jivesoftware.com",
     "title": "Jive Purposeful Places SDK - A NodeJS Bromance",
+    "abstract": "<p>Jive Software&#39;s latest cloud release enables 3rd party developers to easily push data marshalled from external systems of record such as Salesforce into Jive. Our aim is to publish a developer framework and API which makes it drop-dead simple -- and fun -- to get up-and-going from scratch, or easily integrate into an existing framework. We chose NodeJS precisely for those reasons:</p>\n<p>High developer adoption<br>\nHigh velocity development -- javascript! no compilation required<br>\nBest-in-class IDE support (IntelliJ for example)<br>\nNative support for REST and HTTP<br>\nExcellent package management system (NPM == maven the Good Parts)<br>\nTons of great libraries<br>\nAmazing documentation, well organized, very easy to get started instantly<br>\nOur framework is built on Express, and is designed to be programmed by &quot;convention: fill in the blanks with logic specific to your application, and as long as you&#39;ve satisfied the contract, the framework automatically:</p>\n<p>Wires up routes required for configuring your integration<br>\nNotifies your listeners for integration life cycle events (integration created; destroyed; updated, etc.)<br>\nExecutes recurrent tasks you&#39;ve scheduled<br>\nHandles persistence of required objects. We have support for 3 types of persistence out of the box -- in-memory, file, and MondoDB.<br>\nThe framework is designed for developers who want to as quickly as possible start integrating a 3rd party service with Jive, with minimum setup.</p>\n<p>For those interested in integrating Jive into an existing NodeJS Express app, we are going to make the underlying API available to developers, allowing them finer grained control over the setup of their integration. This API will be the same one underlying the mechanics of the aforementioned framework.</p>\n<p>For my presentation, I will be describe how we used NodeJS as the basis for this framework and API. Please note at the time of this proposal, we&#39;ve created the framework, and are now in the process of refining the API so that it can be used independently of the framework.</p>",
     "released": true
   }
 ]

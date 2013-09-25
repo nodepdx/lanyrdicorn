@@ -57,6 +57,8 @@ stdin.on('end', function() {
         'email': speaker['email'],
         // session title
         'title': item['title'],
+        // session abstract
+        'abstract': item['abstract'],
         // session should be released?
         'released': true
       };
